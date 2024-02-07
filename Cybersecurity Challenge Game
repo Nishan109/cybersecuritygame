@@ -1,0 +1,43 @@
+#include <stdio.h>
+int main(){
+  int num4, num3;
+  int num1=2;
+  int num2=4;
+  int a=1, b=2;
+  printf("Cybersecurity Challenge Game\n");
+  printf("CREATOR NISHAN SINGH\n");
+  printf("\n");
+  printf("You're given a mission to uncover the secret code.\n");
+  printf("\n");
+  printf("If You want to play this game then enter '2':\n");
+  scanf( "%d", &b);
+  printf("Excellent! You're on your way to becoming a codebreaker.\n");
+  printf("\n");
+  printf("Game Instructions: \n");
+  printf("1. You will be given a set of Four numbers.\n 2.You target to find exact passwords.\n 3. Total 4 numbers in this game.\n 4. First and second number are given.\n 5. You will find out  last two digits (2,4,?,?).\n 6. Number should be in postive.\n");
+  printf("\n");
+  printf("If you're ready to begin, enter '1':");
+  scanf(" %d", &a);
+  printf("\n");
+  printf("The first number: %d\n",num1);
+  printf("The second number: %d\n",num2);\
+  printf("\n");
+  printf("****Enter the last two digits****\n");
+  printf("\n");
+
+  printf("Enter the third number\n");
+  scanf( "%d", &num3);
+  printf("Enter the fourth number\n");
+  scanf(" %d", &num4);
+  printf("\n");
+    if (num3==3 && num4== 6)
+            printf("Congratulations! You have found the password\n You are real hacker");
+
+        else if (num3 != 3 || num4 != 6)
+          printf("Sorry! You have entered wrong password\n Try again\nHint: The third number is prime number and the fourth number is 2*Prime number");
+
+        else 
+            printf("Sorry! You have not found the password\n");
+
+        return 0;
+    }
